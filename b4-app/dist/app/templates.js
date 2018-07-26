@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Handlebars = require("../node_modules/handlebars/dist/handlebars.js");
+exports.main = Handlebars.compile("\n  <div class=\"container\">\n    <h1>B4 - Book Bundler</h1>\n    <div class=\"b4-alerts\"></div>\n    <div class=\"b4-main\"></div>\n  </div>\n");
+exports.welcome = Handlebars.compile("\n  <div class=\"jumbotron\">\n    <h1>Welcome!</h1>\n    <p>B4 is an application for creating book bundles.</p>\n  </div>\n");
+exports.alert = Handlebars.compile("\n  <div class=\"alert alert-{{type}} alert-dismissible fade-in\" role=\"alert\">\n    <button class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n    {{message}}\n  </div>\n");
+exports.listBundles = Handlebars.compile("\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\">Your Bundles</div>\n    {{#if bundles.length}}\n      <table class=\"table\">\n        <tr>\n          <th>Bundle Name</th>\n          <th>Actions</th>\n        </tr>\n        {{#each bundles}}\n        <tr>\n          <td>\n            <a href=\"#view-bundle/{{id}}\">{{name}}</a>\n          </td>\n          <td>\n            <button class=\"btn delete\" data-bundle-id=\"{{id}}\">Delete</button>\n          </td>\n        </tr>\n        {{/each}}\n      </table>\n    {{else}}\n      <div class=\"panel-body\">\n        <p>None yet!</p>\n      </div>\n    {{/if}}\n  </div>\n");
+//# sourceMappingURL=templates.js.map

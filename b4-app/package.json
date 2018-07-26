@@ -1,0 +1,28 @@
+{
+  "name": "b4-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Timothy Tsui <timiscoding@gmail.com> (https://github.com/timiscoding)",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "3.3.7",
+    "css-loader": "0.28.7",
+    "extract-text-webpack-plugin": "3.0.1",
+    "file-loader": "1.1.5",
+    "handlebars": "4.0.10",
+    "html-webpack-plugin": "2.30.1",
+    "jquery": "3.2.1",
+    "style-loader": "0.19.0",
+    "ts-loader": "2.3.7",
+    "typescript": "2.5.3",
+    "url-loader": "0.6.2",
+    "webpack": "3.6.0",
+    "webpack-dev-server": "2.9.1"
+  }
+}
