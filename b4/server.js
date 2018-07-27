@@ -47,6 +47,16 @@ if (isDev) {
   }));
 } else {
   // Use RedisStore in production mode
+  const RedisStore = require('connect-redis')(expressSession);
+  app.use(expressSession({
+    resave: false,
+    saveUninitialized: false,
+    secret: nconf.get('redis:secret'),
+    store: new RedisStore({
+      host: nconf.get('redis:host'),
+      port: nconf.get('redis.port'),
+    }),
+  }));
 }
 
 

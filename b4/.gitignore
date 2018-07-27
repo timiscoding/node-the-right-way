@@ -1,2 +1,4 @@
 development.config.json
+production.config.json
 sessions
+dist

@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap-social": "5.1.1",
+    "connect-redis": "3.3.2",
     "express": "4.15.3",
     "express-session": "1.15.6",
     "font-awesome": "4.7.0",
